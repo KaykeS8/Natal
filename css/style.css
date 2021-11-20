@@ -199,3 +199,79 @@ li {
 }
 
 /* FRASES NATALINAS */
+
+.frases-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.frase-titulo h2 {
+    font-size: 3em;
+    font-family: var(--fonteTitulo);
+    text-align: center;
+}
+
+.frase-titulo {
+    max-width: 250px;
+    border-bottom: 4px solid var(--cor2);
+    margin: 60px auto;
+}
+
+
+.frase-item {
+    display: flex;
+    flex: 1 1 380px;
+    background-color: #fff;
+    margin: 20px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.frase-item h3 {
+    background-color: var(--cor1);
+    color: #fff;
+    font-family: var(--fonteTitulo);
+    font-size: 2em;
+    text-align: center;
+    font-weight: normal;
+}
+
+.frase-item p {
+    text-align: center;
+    margin: 60px auto;
+    max-width: 300px;
+    font-size: 1.125em;
+    font-style: italic;
+    line-height: 1.4;
+}
+
+.frase-item span {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.frase-item img {
+    width: 30px;
+    height: 30px;
+}
+
+.frase-item a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor1);
+    font-size: 2em;
+    color: #fff;
+    font-family: var(--fonteTitulo);
+}
+
+
+.frase-item a:hover {
+    background:  #777777;
+    transition: .7s;
+}
+
+/* IMAGENS NATALINAS */
