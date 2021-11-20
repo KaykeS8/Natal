@@ -209,6 +209,7 @@ li {
     font-size: 3em;
     font-family: var(--fonteTitulo);
     text-align: center;
+    text-transform: uppercase;
 }
 
 .frase-titulo {
@@ -264,6 +265,7 @@ li {
     align-items: center;
     background-color: var(--cor1);
     font-size: 2em;
+    font-weight: bold;
     color: #fff;
     font-family: var(--fonteTitulo);
 }
@@ -275,3 +277,70 @@ li {
 }
 
 /* IMAGENS NATALINAS */
+
+.imagens-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.imagens-titulo h2{
+    font-size: 3em;
+    font-family: var(--fonteTitulo);
+    text-align: center;
+    text-transform: uppercase; 
+}
+
+.imagens-titulo {
+    max-width: 270px;
+    border-bottom: 4px solid var(--cor2);
+    margin: 60px auto;
+}
+
+.imagens-item {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+    margin-right: 60px;
+}
+
+.imagens-item img {
+    display: block;
+    max-width: 100%;
+    margin-right: 60px;
+}
+
+.imagens-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.imagens-item h3 {
+    font-size: 2em;
+    display: block;
+    font-family: var(--fonteTitulo);
+    margin-bottom: 20px;
+}
+
+.imagens-item p {
+    max-width: 280px;
+    font-size: 1.125em;
+    line-height: 1.4;
+    color: var(--corTexto);
+    margin-bottom: 20px;
+}
+
+.imagens-item a {
+    background-color: var(--cor1);
+    padding: 5px;
+    width: 286px;
+    color: #fff;
+    font-size: 2em;
+    font-family: var(--fonteTitulo);
+    font-weight: bold;
+    text-align: center;
+}
+
+/* FOOTER */
