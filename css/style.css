@@ -166,3 +166,36 @@ li {
     transition: .4s;
 }
 }
+
+
+/* SOBRE */
+
+.sobre {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+.sobre h2 {
+    font-size: 3em;
+    font-family: var(--fonteTitulo);
+    text-align: center;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+}
+
+.sobre p {
+    font-size: 1.125em;
+    color: var(--corTexto);
+    line-height: 1.4;
+    margin-bottom: 35px;
+}
+
+.cite {
+    background-color: #e7e6e6;
+    padding:25px;
+    color: var(--corTexto);
+    border-left: 4px solid var(--cor1);
+}
+
+/* FRASES NATALINAS */
