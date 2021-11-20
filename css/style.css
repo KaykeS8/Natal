@@ -1,0 +1,172 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body {
+    background-color: 	#f0ebeb;
+    font-family: 'Cardo', serif;
+} 
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+:root {
+    --fonteTitulo: 'Amatic SC', cursive;
+    --cor1: #225c72;
+    --cor2: #AD1F1B;
+    --corTexto: #777777;
+}
+
+/* MENU */
+
+.header {
+    background-color: var(--cor2);
+    padding: 20px 0;
+}
+
+.header h1 {
+    font-size: 3em;
+    font-family: var(--fonteTitulo);
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 960px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.menu-nav a {
+    display: block;
+    color: #fff;
+    font-size: 2em;
+    font-family: var(--fonteTitulo);
+    padding: 10px;
+}
+
+#menu {
+    display: flex;
+    gap: 10px;
+}
+
+.menu-nav a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    background: var(--cor1);
+}
+
+.menu-nav a:hover::after {
+    width: 100%;
+    transition: .4s;
+}
+
+#btn-mobile {
+    display: none;
+}
+
+@media (max-width: 600px) {
+   #menu {
+      display: block;
+      position: absolute;
+      width: 100%;
+      top: 90px;
+      right: 0;
+      background-color: var(--cor2);
+      height: 0;
+      z-index: 1000;
+      transition: .4s;
+      visibility: hidden;
+      overflow-y: hidden;
+   }
+
+   #nav.active #menu {
+       height: calc(100vh - 70px);
+       visibility: visible;
+       overflow-y: auto;
+   }
+
+   #menu a {
+       padding: 1rem 0;
+       margin: 0 1rem;
+       border-bottom: 2px solid rgba(0, 0, 0,.05);
+       text-align: center;
+   }
+
+   #btn-mobile {
+       display: flex;
+       padding: .5rem 1rem;
+       font-size: 1rem;
+       border: none;
+       background: none;
+       cursor: pointer;
+       gap: .5rem;
+   }
+
+   #hamburger {
+       display: block;
+       border-top: 2px solid;
+       width: 20px;
+   }
+
+   #hamburger::after, #hamburger::before {
+       content: '';
+       display: block;
+       width: 20px;
+       height: 2px;
+       margin-top: 5px;
+       background: black; 
+       transition: .4s;
+       position: relative;
+   }
+
+   .menu-nav a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    margin: 0 auto;
+    background: var(--cor1);
+}
+
+#nav.active #hamburger {
+    border-top-color: transparent;
+}
+
+#nav.active #hamburger::before {
+    transform: rotate(135deg);
+}
+
+#nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+}
+
+.menu-nav a:hover::after {
+    width:15%;
+    transition: .4s;
+}
+}
+
+
+
+/* SOBRE */
