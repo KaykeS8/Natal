@@ -344,3 +344,34 @@ li {
 }
 
 /* FOOTER */
+
+.footer {
+    background-color: var(--cor2);
+    padding: 20px 0;
+    margin-top: 60px;
+}
+
+.footer img{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    max-width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.footer-img {
+    display: flex;
+    gap: 20px;
+}
+
+.footer p {
+    font-size: 2em;
+    color: #fff;
+    font-family: var(--fonteTitulo);
+}
